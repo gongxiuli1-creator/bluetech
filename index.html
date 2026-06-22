@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蓝色科技集团 | 数字化技术解决方案服务商</title>
+<meta name="description" content="蓝色科技集团 - 专业的数字化技术解决方案服务商，科技赋能·创新发展。为工业、政企、零售、医疗等行业提供数字化落地解决方案，服务全球华人客户合伙人。">
+<meta name="keywords" content="蓝色科技集团,数字化解决方案,科技集团,技术研发,Bloom Advance,数字化转型,企业服务,香港,海外华人">
+<meta name="author" content="蓝色科技集团">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="蓝色科技集团 | 数字化技术解决方案服务商">
+<meta property="og:description" content="科技赋能·创新发展。专业数字化技术解决方案服务商。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<style>
+:root{--blue:#0F52BA;--blue-deep:#0A3C8A;--blue-light:#E6F0FF;--gray:#F5F7FA;--text:#1f2733;--muted:#5a6678;--white:#fff;--line:#e3e9f2;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;color:var(--text);background:#fff;line-height:1.7;overflow-x:hidden}
+img{max-width:100%;display:block}a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.btn{display:inline-block;padding:12px 30px;border-radius:30px;font-size:15px;cursor:pointer;border:none;transition:.3s;font-weight:500}
+.btn-primary{background:var(--blue);color:#fff}.btn-primary:hover{background:var(--blue-deep);box-shadow:0 8px 20px rgba(15,82,186,.3)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.8)}.btn-ghost:hover{background:#fff;color:var(--blue)}
+.sec-title{text-align:center;margin-bottom:14px}.sec-title h2{font-size:30px;font-weight:700;letter-spacing:1px}
+.sec-title .line{width:46px;height:3px;background:var(--blue);margin:16px auto 0;border-radius:2px}
+.sec-sub{text-align:center;color:var(--muted);max-width:760px;margin:0 auto 46px;font-size:15px}
+section{padding:80px 0}
+header{position:fixed;top:0;left:0;right:0;z-index:1000;transition:.35s}
+header.top{background:linear-gradient(90deg,rgba(255,255,255,.15),rgba(15,82,186,.12))}
+header.scrolled{background:rgba(255,255,255,.97);box-shadow:0 4px 20px rgba(15,82,186,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;color:#fff;transition:.35s;cursor:pointer}
+.logo .mark{width:34px;height:34px;border-radius:8px;background:linear-gradient(135deg,#3a7bd5,#0F52BA);display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;box-shadow:0 4px 10px rgba(15,82,186,.35)}
+header.scrolled .logo{color:var(--blue)}
+.menu{display:flex;gap:34px;list-style:none}
+.menu a{color:#fff;font-size:15px;font-weight:500;transition:.3s;position:relative;padding:6px 0;cursor:pointer}
+.menu a:after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--blue);transition:.3s}
+.menu a:hover:after,.menu a.active:after{width:100%}
+header.scrolled .menu a{color:var(--text)}
+header.scrolled .menu a:hover,header.scrolled .menu a.active{color:var(--blue)}
+.nav-right{display:flex;align-items:center;gap:16px}
+.lang{color:#fff;border:1px solid rgba(255,255,255,.6);border-radius:20px;padding:5px 14px;font-size:13px;cursor:pointer;background:transparent;transition:.3s}
+header.scrolled .lang{color:var(--blue);border-color:var(--blue)}.lang:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}.burger span{width:24px;height:2px;background:#fff;transition:.3s}
+header.scrolled .burger span{background:var(--text)}
+.page{display:none}.page.show{display:block;animation:fade .5s}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.hero{position:relative;height:100vh;min-height:620px;display:flex;align-items:center;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1920&q=80') center/cover}
+.hero-mask{position:absolute;inset:0;background:linear-gradient(120deg,rgba(10,40,120,.88),rgba(15,82,186,.65) 50%,rgba(15,82,186,.35))}
+.hero-deco{position:absolute;right:-80px;top:50%;transform:translateY(-50%);width:520px;height:520px;border:2px solid rgba(255,255,255,.12);border-radius:50%}
+.hero-deco:after{content:"";position:absolute;inset:60px;border:2px solid rgba(255,255,255,.08);border-radius:50%}
+.hero-inner{position:relative;z-index:2}
+.hero .tag{display:inline-block;border:1px solid rgba(255,255,255,.5);border-radius:20px;padding:6px 18px;font-size:13px;margin-bottom:24px;letter-spacing:2px}
+.hero h1{font-size:56px;font-weight:800;line-height:1.2;letter-spacing:2px;margin-bottom:20px;text-shadow:0 4px 20px rgba(0,0,0,.2)}
+.hero .sub{font-size:20px;opacity:.92;margin-bottom:40px;font-weight:300}.hero .acts{display:flex;gap:18px;flex-wrap:wrap}
+.adv-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.adv-item{flex:1;min-width:180px;text-align:center}
+.adv-ico{width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--blue-light),#fff);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:38px;color:var(--blue);transition:.4s;box-shadow:0 10px 25px rgba(15,82,186,.08)}
+.adv-item:hover .adv-ico{background:linear-gradient(135deg,var(--blue),var(--blue-deep));color:#fff;transform:translateY(-6px);box-shadow:0 16px 30px rgba(15,82,186,.3)}
+.adv-item h4{font-size:18px;margin-bottom:8px}.adv-item p{font-size:13px;color:var(--muted)}
+.biz{background:var(--gray)}.biz-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.biz-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 8px 24px rgba(15,82,186,.06);transition:.35s;cursor:pointer}
+.biz-card:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(15,82,186,.18)}
+.biz-card .ph{height:180px;background-size:cover;background-position:center;position:relative}
+.biz-card .ph:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,82,186,0),rgba(15,82,186,.25))}
+.biz-card .bd{padding:26px}.biz-card h4{font-size:20px;margin-bottom:10px;color:var(--blue)}
+.biz-card p{font-size:14px;color:var(--muted);margin-bottom:18px;min-height:66px}
+.biz-card .more{font-size:14px;color:var(--blue);font-weight:600}.biz-card .more:after{content:" →"}
+.case-track{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.case-card{border-radius:12px;overflow:hidden;position:relative;cursor:pointer;box-shadow:0 8px 20px rgba(0,0,0,.06)}
+.case-card .ci{height:200px;background-size:cover;background-position:center;transition:.5s}
+.case-card:hover .ci{transform:scale(1.08)}
+.case-card .co{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,40,120,0) 40%,rgba(10,40,120,.85));display:flex;flex-direction:column;justify-content:flex-end;padding:20px;color:#fff}
+.case-card .co .tagx{font-size:12px;background:var(--blue);display:inline-block;width:fit-content;padding:3px 10px;border-radius:12px;margin-bottom:8px}
+.case-card .co h4{font-size:16px}.center{text-align:center;margin-top:46px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.split .tx h2{font-size:30px;margin-bottom:8px}.split .tx .line{width:46px;height:3px;background:var(--blue);margin:14px 0 22px;border-radius:2px}
+.split .tx p{color:var(--muted);margin-bottom:16px}
+.stat{display:flex;gap:36px;margin-top:28px}.stat .n{font-size:38px;font-weight:800;color:var(--blue)}.stat .l{font-size:13px;color:var(--muted)}
+.split .im{border-radius:16px;overflow:hidden;padding:8px;background:linear-gradient(135deg,var(--blue-light),#fff);box-shadow:0 18px 40px rgba(15,82,186,.15)}
+.split .im img{border-radius:12px;height:360px;width:100%;object-fit:cover}
+.blueband{background:linear-gradient(120deg,var(--blue-deep),var(--blue));color:#fff;position:relative;overflow:hidden}
+.blueband:before{content:"";position:absolute;right:-100px;top:-100px;width:340px;height:340px;border:40px solid rgba(255,255,255,.05);border-radius:50%}
+.blueband .sec-title h2{color:#fff}.blueband .sec-title .line{background:#fff}
+.bb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;text-align:center}
+.bb-item .bi{font-size:42px;margin-bottom:14px}.bb-item h4{font-size:20px;margin-bottom:8px}.bb-item p{opacity:.85;font-size:14px}
+.plat{display:flex;align-items:center;justify-content:center;flex-wrap:wrap}.plat-item{text-align:center;flex:1;min-width:150px}
+.plat-ring{width:120px;height:120px;border-radius:50%;border:2px solid var(--blue);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:34px;color:var(--blue);background:#fff;transition:.3s}
+.plat-item:hover .plat-ring{background:var(--blue);color:#fff;transform:scale(1.05)}
+.plat-arrow{font-size:26px;color:var(--blue);opacity:.5;align-self:center}.plat-item h4{font-size:16px}
+footer{background:#0c1a33;color:#c5cfe0;padding:60px 0 0}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1.3fr;gap:40px;padding-bottom:40px}
+.f-col h4{color:#fff;font-size:17px;margin-bottom:20px}
+.f-col p,.f-col a{font-size:14px;color:#9aa8c0;margin-bottom:10px;display:block;transition:.2s}.f-col a:hover{color:#fff}
+.f-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;color:#fff;margin-bottom:16px}
+.f-logo .mark{width:34px;height:34px;border-radius:8px;background:linear-gradient(135deg,#3a7bd5,#0F52BA);display:flex;align-items:center;justify-content:center}
+.f-bottom{border-top:1px solid rgba(255,255,255,.1);padding:20px 0;text-align:center;font-size:13px;color:#7e8ba6}.f-bottom a{color:#7e8ba6}
+.inner-banner{height:340px;display:flex;align-items:center;color:#fff;position:relative}
+.inner-banner .ib-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.inner-banner .ib-mask{position:absolute;inset:0;background:linear-gradient(120deg,rgba(10,40,120,.9),rgba(15,82,186,.6))}
+.inner-banner .ib-tx{position:relative;z-index:2;padding-top:60px}
+.inner-banner h1{font-size:42px;letter-spacing:3px;margin-bottom:10px}.inner-banner p{font-size:16px;opacity:.9}
+.crumb{font-size:13px;opacity:.8;margin-top:14px}
+.timeline{position:relative;max-width:840px;margin:0 auto;padding-left:30px}
+.timeline:before{content:"";position:absolute;left:6px;top:0;bottom:0;width:2px;background:linear-gradient(var(--blue),var(--blue-light))}
+.tl-item{position:relative;padding:0 0 36px 36px}
+.tl-item:before{content:"";position:absolute;left:-6px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 4px var(--blue-light)}
+.tl-item .yr{color:var(--blue);font-weight:700;font-size:20px;margin-bottom:4px}.tl-item p{color:var(--muted);font-size:14px}
+.about-intro{display:grid;grid-template-columns:1.2fr 1fr;gap:46px;align-items:center}
+.about-intro .im{border-radius:16px;overflow:hidden;box-shadow:0 18px 40px rgba(15,82,186,.15)}.about-intro .im img{height:380px;width:100%;object-fit:cover}
+.about-intro p{color:var(--muted);margin-bottom:16px}
+.vmv{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:30px}
+.vmv-card{background:var(--gray);border-radius:12px;padding:28px;text-align:center;border-top:3px solid var(--blue)}
+.vmv-card .vi{font-size:34px;color:var(--blue);margin-bottom:12px}.vmv-card h4{margin-bottom:8px}.vmv-card p{font-size:13px;color:var(--muted)}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.gal .g{border-radius:12px;overflow:hidden;height:220px}
+.gal .g img{height:100%;width:100%;object-fit:cover;transition:.5s}.gal .g:hover img{transform:scale(1.08)}
+.honor{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.honor .h{background:#fff;border:1px solid var(--line);border-radius:12px;padding:30px 20px;text-align:center;transition:.3s}
+.honor .h:hover{box-shadow:0 14px 30px rgba(15,82,186,.12);transform:translateY(-5px)}
+.honor .h .n{font-size:40px;font-weight:800;color:var(--blue)}.honor .h p{font-size:14px;color:var(--muted);margin-top:6px}
+.org{text-align:center}.org .top{display:inline-block;background:var(--blue);color:#fff;padding:14px 40px;border-radius:10px;font-weight:600;margin-bottom:30px}
+.org-row{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.org-node{background:#fff;border:1.5px solid var(--blue);color:var(--blue);padding:16px 26px;border-radius:10px;font-weight:600;font-size:15px}
+.filters{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:46px}
+.filters button{background:#fff;border:1.5px solid var(--line);color:var(--text);padding:9px 24px;border-radius:24px;cursor:pointer;font-size:14px;transition:.3s}
+.filters button.on,.filters button:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+.case-list{display:grid;grid-template-columns:repeat(2,1fr);gap:30px}
+.cl-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 8px 24px rgba(15,82,186,.07);display:grid;grid-template-columns:200px 1fr;transition:.3s;cursor:pointer}
+.cl-card:hover{box-shadow:0 18px 40px rgba(15,82,186,.16);transform:translateY(-4px)}
+.cl-card .ci{background-size:cover;background-position:center;min-height:170px}.cl-card .cb{padding:24px}
+.cl-card .tg{font-size:12px;color:var(--blue);background:var(--blue-light);padding:3px 12px;border-radius:12px;display:inline-block;margin-bottom:10px}
+.cl-card h4{font-size:18px;margin-bottom:8px}.cl-card p{font-size:13px;color:var(--muted)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:46px}
+.contact-info .ci-item{display:flex;gap:16px;margin-bottom:26px;align-items:flex-start}
+.contact-info .ci-ico{width:48px;height:48px;border-radius:12px;background:var(--blue-light);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.contact-info h4{font-size:16px;margin-bottom:4px}.contact-info p{font-size:14px;color:var(--muted)}
+.form{background:var(--gray);border-radius:16px;padding:36px}.form .fg{margin-bottom:20px}
+.form label{display:block;font-size:14px;margin-bottom:8px;font-weight:500}.form label .req{color:#e23}
+.form input,.form textarea{width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font-size:14px;font-family:inherit;background:#fff;transition:.2s}
+.form input:focus,.form textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(15,82,186,.1)}
+.form textarea{resize:vertical;min-height:120px}
+.map-embed{border-radius:16px;overflow:hidden;margin-top:50px;height:300px;background:var(--blue-light) url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1400&q=70') center/cover;display:flex;align-items:center;justify-content:center;color:#fff;position:relative}
+.map-embed:after{content:"";position:absolute;inset:0;background:rgba(15,82,186,.35)}
+.map-embed span{position:relative;z-index:2;font-size:18px;background:rgba(15,82,186,.7);padding:10px 24px;border-radius:30px}
+.svc{display:grid;grid-template-columns:repeat(2,1fr);gap:30px}
+.svc-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:34px;transition:.3s;border-left:4px solid var(--blue)}
+.svc-card:hover{box-shadow:0 16px 36px rgba(15,82,186,.12);transform:translateY(-4px)}
+.svc-card .si{font-size:36px;color:var(--blue);margin-bottom:16px}.svc-card h4{font-size:20px;margin-bottom:10px}
+.svc-card p{color:var(--muted);font-size:14px;margin-bottom:14px}
+.svc-card .tags span{font-size:12px;background:var(--blue-light);color:var(--blue);padding:4px 12px;border-radius:12px;margin-right:8px;display:inline-block;margin-bottom:6px}
+@media(max-width:900px){
+.menu,.nav-right .lang{display:none}.burger{display:flex}
+.menu.open{display:flex;flex-direction:column;position:absolute;top:70px;left:0;right:0;background:#fff;padding:20px 24px;box-shadow:0 10px 30px rgba(0,0,0,.1);gap:0}
+.menu.open a{color:var(--text);padding:14px 0;border-bottom:1px solid var(--line)}
+.hero h1{font-size:36px}.hero .sub{font-size:16px}
+.adv-grid{gap:30px}.adv-item{min-width:130px;flex:0 0 40%}
+.biz-grid,.bb-grid,.svc,.case-list,.vmv,.honor{grid-template-columns:1fr}
+.case-track,.gal{grid-template-columns:1fr 1fr}
+.split,.about-intro,.contact-grid{grid-template-columns:1fr;gap:30px}
+.plat{flex-direction:column}.plat-arrow{transform:rotate(90deg)}
+.cl-card{grid-template-columns:1fr}.f-grid{grid-template-columns:1fr;gap:24px}.sec-title h2{font-size:24px}}
+</style>
+</head>
+<body>
+
+<header id="hdr" class="top">
+  <div class="container nav">
+    <div class="logo" data-nav="home"><span class="mark">蓝</span><span>蓝色科技集团</span></div>
+    <ul class="menu" id="menu">
+      <li><a data-nav="home" class="active">首页</a></li>
+      <li><a data-nav="about">关于我们</a></li>
+      <li><a data-nav="service">业务体系</a></li>
+      <li><a data-nav="cases">过往案例</a></li>
+      <li><a data-nav="contact">联系我们</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang" id="langBtn">中 / EN</button>
+      <div class="burger" id="burger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</header>
+
+<div class="page show" id="page-home">
+  <div class="hero">
+    <div class="hero-bg"></div><div class="hero-mask"></div><div class="hero-deco"></div>
+    <div class="container hero-inner">
+      <span class="tag">蓝色科技 · 数字未来</span>
+      <h1>科技赋能 · 创新发展</h1>
+      <p class="sub">专业的数字化技术解决方案服务商</p>
+      <div class="acts">
+        <a class="btn btn-primary" data-nav="about">了解我们</a>
+        <a class="btn btn-ghost" data-nav="cases">查看案例</a>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="sec-title"><h2>企业核心竞争力</h2><div class="line"></div></div>
+      <p class="sec-sub">以技术为根基，以服务为保障，为客户提供从研发到落地的全链路数字化能力</p>
+      <div class="adv-grid">
+        <div class="adv-item"><div class="adv-ico">⚙️</div><h4>技术研发</h4><p>专业研发团队，持续技术沉淀</p></div>
+        <div class="adv-item"><div class="adv-ico">📜</div><h4>自主专利</h4><p>多项核心技术自主知识产权</p></div>
+        <div class="adv-item"><div class="adv-ico">🚀</div><h4>项目落地</h4><p>丰富的项目实施交付经验</p></div>
+        <div class="adv-item"><div class="adv-ico">🛡️</div><h4>售后保障</h4><p>全周期运维与技术支持</p></div>
+        <div class="adv-item"><div class="adv-ico">🌐</div><h4>全球服务</h4><p>服务全球华人客户合伙人</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="biz">
+    <div class="container">
+      <div class="sec-title"><h2>主营业务板块</h2><div class="line"></div></div>
+      <p class="sec-sub">围绕数字化转型核心需求，提供软件研发、系统集成与数字营销三大业务方向</p>
+      <div class="biz-grid">
+        <div class="biz-card" data-nav="service"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=70')"></div><div class="bd"><h4>软件研发</h4><p>定制化软件开发、平台搭建、系统架构设计，助力企业数字化基建。</p><span class="more">查看详情</span></div></div>
+        <div class="biz-card" data-nav="service"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=70')"></div><div class="bd"><h4>系统集成</h4><p>软硬件一体化集成方案，数据互联互通，打造高效智能业务系统。</p><span class="more">查看详情</span></div></div>
+        <div class="biz-card" data-nav="service"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=70')"></div><div class="bd"><h4>数字营销</h4><p>品牌出海、海外推广、谷歌搜索优化，帮助客户触达全球市场。</p><span class="more">查看详情</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="sec-title"><h2>经典落地案例</h2><div class="line"></div></div>
+      <p class="sec-sub">覆盖工业、政企、零售、医疗等多个行业的数字化落地成果</p>
+      <div class="case-track">
+        <div class="case-card" data-nav="cases"><div class="ci" style="background-image:url('https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=70')"></div><div class="co"><span class="tagx">品牌出海</span><h4>Bloom Advance 品牌网站</h4></div></div>
+        <div class="case-card" data-nav="cases"><div class="ci" style="background-image:url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=70')"></div><div class="co"><span class="tagx">工业</span><h4>智能制造管理平台</h4></div></div>
+        <div class="case-card" data-nav="cases"><div class="ci" style="background-image:url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=70')"></div><div class="co"><span class="tagx">医疗</span><h4>智慧医疗信息系统</h4></div></div>
+        <div class="case-card" data-nav="cases"><div class="ci" style="background-image:url('https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?auto=format&fit=crop&w=800&q=70')"></div><div class="co"><span class="tagx">零售</span><h4>新零售数字门店</h4></div></div>
+      </div>
+      <div class="center"><a class="btn btn-primary" data-nav="cases">全部案例</a></div>
+    </div>
+  </section>
+
+  <section class="biz">
+    <div class="container split">
+      <div class="tx">
+        <h2>企业实力 · 专业团队</h2><div class="line"></div>
+        <p>蓝色科技集团是一家专注于数字化技术服务的科技企业，汇聚资深研发与项目交付人才，致力于以扎实的技术沉淀为客户创造价值。</p>
+        <p>我们服务于全球华人客户合伙人，涵盖香港及海外市场，以国际化视野与本土化服务能力，陪伴客户共同成长。</p>
+        <div class="stat"><div><div class="n">100+</div><div class="l">服务客户合伙人</div></div><div><div class="n">50+</div><div class="l">技术研发团队</div></div><div><div class="n">10+</div><div class="l">行业落地经验</div></div></div>
+      </div>
+      <div class="im"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=75" alt="研发团队"></div>
+    </div>
+  </section>
+
+  <section class="blueband">
+    <div class="container">
+      <div class="sec-title"><h2>企业保障 · 持续投入</h2><div class="line"></div></div>
+      <div class="bb-grid">
+        <div class="bb-item"><div class="bi">🔬</div><h4>研发扶持</h4><p>持续加大研发投入，保障核心技术持续迭代升级</p></div>
+        <div class="bb-item"><div class="bi">🤝</div><h4>合伙人机制</h4><p>与全球华人合伙人共建生态，共享发展成果</p></div>
+        <div class="bb-item"><div class="bi">🏅</div><h4>品质承诺</h4><p>全流程质量管控，交付高标准数字化产品与服务</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="sec-title"><h2>四大发展平台</h2><div class="line"></div></div>
+      <p class="sec-sub">从技术到落地，构建客户共赢的递进式服务体系</p>
+      <div class="plat">
+        <div class="plat-item"><div class="plat-ring">💡</div><h4>研发的平台</h4></div>
+        <div class="plat-arrow">➜</div>
+        <div class="plat-item"><div class="plat-ring">🛠️</div><h4>实践的平台</h4></div>
+        <div class="plat-arrow">➜</div>
+        <div class="plat-item"><div class="plat-ring">📈</div><h4>成长的平台</h4></div>
+        <div class="plat-arrow">➜</div>
+        <div class="plat-item"><div class="plat-ring">🏆</div><h4>共赢的舞台</h4></div>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="page" id="page-about">
+  <div class="inner-banner">
+    <div class="ib-bg" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=75')"></div><div class="ib-mask"></div>
+    <div class="container ib-tx"><h1>关于我们</h1><p>科技赋能 · 创新发展 — 您值得信赖的数字化技术伙伴</p><div class="crumb">首页 / 关于我们</div></div>
+  </div>
+  <section>
+    <div class="container">
+      <div class="sec-title"><h2>企业简介</h2><div class="line"></div></div>
+      <div class="about-intro" style="margin-top:30px">
+        <div class="tx">
+          <p>蓝色科技集团是一家专注于数字化技术解决方案的科技企业，以"科技赋能 · 创新发展"为核心理念，深耕软件研发、系统集成与数字营销等领域。</p>
+          <p>公司服务对象以全球华人客户合伙人为主，覆盖香港及海外市场。我们以国际化的服务视野与扎实的技术能力，帮助客户实现业务的数字化升级与全球化拓展。</p>
+          <p>我们坚信，技术的价值在于落地。多年来，蓝色科技集团始终以客户成果为导向，用专业与匠心赢得客户的长期信赖。</p>
+          <div class="vmv">
+            <div class="vmv-card"><div class="vi">🎯</div><h4>企业愿景</h4><p>成为受全球华人信赖的数字化技术服务品牌</p></div>
+            <div class="vmv-card"><div class="vi">🚩</div><h4>企业使命</h4><p>以科技赋能客户，创造可持续的商业价值</p></div>
+            <div class="vmv-card"><div class="vi">💎</div><h4>核心价值观</h4><p>专业、诚信、创新、共赢</p></div>
+          </div>
+        </div>
+        <div class="im"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=75" alt="企业大楼"></div>
+      </div>
+    </div>
+  </section>
+  <section class="biz">
+    <div class="container">
+      <div class="sec-title"><h2>发展历程</h2><div class="line"></div></div>
+      <div class="timeline" style="margin-top:40px">
+        <div class="tl-item"><div class="yr">2015</div><p>公司成立，确立数字化技术服务方向，组建首支研发团队。</p></div>
+        <div class="tl-item"><div class="yr">2018</div><p>完成多项核心技术研发，获得自主软件著作权，业务版图持续扩展。</p></div>
+        <div class="tl-item"><div class="yr">2021</div><p>开拓海外市场，服务香港及海外华人客户合伙人，启动品牌出海业务。</p></div>
+        <div class="tl-item"><div class="yr">2023</div><p>交付包括 Bloom Advance 在内的多个品牌出海项目，行业口碑持续提升。</p></div>
+        <div class="tl-item"><div class="yr">2025</div><p>构建全球华人合伙人生态，迈向数字化技术服务新阶段。</p></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="sec-title"><h2>研发实力与办公环境</h2><div class="line"></div></div>
+      <div class="gal" style="margin-top:40px">
+        <div class="g"><img src="https://images.unsplash.com/photo-1497032205916-ac775f0649ae?auto=format&fit=crop&w=800&q=70" alt="办公环境"></div>
+        <div class="g"><img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=800&q=70" alt="研发团队"></div>
+        <div class="g"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=70" alt="协作"></div>
+      </div>
+    </div>
+  </section>
+  <section class="biz">
+    <div class="container">
+      <div class="sec-title"><h2>资质 · 专利 · 荣誉</h2><div class="line"></div></div>
+      <div class="honor" style="margin-top:40px">
+        <div class="h"><div class="n">20+</div><p>软件著作权</p></div>
+        <div class="h"><div class="n">10+</div><p>技术专利</p></div>
+        <div class="h"><div class="n">5+</div><p>行业认证</p></div>
+        <div class="h"><div class="n">100%</div><p>客户满意承诺</p></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="sec-title"><h2>组织架构</h2><div class="line"></div></div>
+      <div class="org" style="margin-top:40px">
+        <div class="top">蓝色科技集团</div>
+        <div class="org-row">
+          <div class="org-node">研发部</div><div class="org-node">项目实施部</div><div class="org-node">售后服务部</div><div class="org-node">市场部</div><div class="org-node">综合管理部</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blueband">
+    <div class="container">
+      <div class="sec-title"><h2>企业文化</h2><div class="line"></div></div>
+      <div class="bb-grid">
+        <div class="bb-item"><div class="bi">🤝</div><h4>诚信为本</h4><p>以诚待客，以信立业</p></div>
+        <div class="bb-item"><div class="bi">💡</div><h4>创新驱动</h4><p>持续创新，追求卓越</p></div>
+        <div class="bb-item"><div class="bi">🌟</div><h4>客户至上</h4><p>以客户成果衡量一切</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="page" id="page-service">
+  <div class="inner-banner">
+    <div class="ib-bg" style="background-image:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=75')"></div><div class="ib-mask"></div>
+    <div class="container ib-tx"><h1>业务体系</h1><p>全链路数字化技术服务，覆盖研发、集成与营销</p><div class="crumb">首页 / 业务体系</div></div>
+  </div>
+  <section>
+    <div class="container">
+      <div class="sec-title"><h2>核心业务方向</h2><div class="line"></div></div>
+      <p class="sec-sub">以技术为核心，围绕客户数字化转型与全球化拓展提供一站式服务</p>
+      <div class="svc">
+        <div class="svc-card"><div class="si">💻</div><h4>定制软件研发</h4><p>面向企业需求的定制化软件开发、系统平台搭建与架构设计，打造稳定高效的数字化基建。</p><div class="tags"><span>Web平台</span><span>小程序</span><span>管理系统</span><span>API开发</span></div></div>
+        <div class="svc-card"><div class="si">🔗</div><h4>系统集成</h4><p>软硬件一体化集成，打通数据孤岛，实现业务系统的互联互通与智能协同。</p><div class="tags"><span>数据中台</span><span>物联集成</span><span>系统对接</span></div></div>
+        <div class="svc-card"><div class="si">🌐</div><h4>数字营销 · 品牌出海</h4><p>面向海外市场的品牌网站建设、谷歌搜索优化与数字推广，助力客户触达全球客户。</p><div class="tags"><span>品牌官网</span><span>SEO优化</span><span>海外推广</span><span>Google搜索</span></div></div>
+        <div class="svc-card"><div class="si">🛡️</div><h4>运维与技术支持</h4><p>提供全周期运维保障、技术支持与持续优化，让客户业务稳定无忧。</p><div class="tags"><span>系统运维</span><span>安全保障</span><span>持续迭代</span></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="biz">
+    <div class="container">
+      <div class="sec-title"><h2>应用场景</h2><div class="line"></div></div>
+      <p class="sec-sub">数字化能力广泛应用于多行业，助力客户业务升级</p>
+      <div class="adv-grid">
+        <div class="adv-item"><div class="adv-ico">🏭</div><h4>工业制造</h4><p>智能制造与生产管理</p></div>
+        <div class="adv-item"><div class="adv-ico">🏛️</div><h4>政企服务</h4><p>政务与企业信息化</p></div>
+        <div class="adv-item"><div class="adv-ico">🛒</div><h4>零售消费</h4><p>新零售与电商平台</p></div>
+        <div class="adv-item"><div class="adv-ico">🏥</div><h4>医疗健康</h4><p>智慧医疗信息系统</p></div>
+        <div class="adv-item"><div class="adv-ico">✈️</div><h4>品牌出海</h4><p>海外品牌数字营销</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="page" id="page-cases">
+  <div class="inner-banner">
+    <div class="ib-bg" style="background-image:url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1920&q=75')"></div><div class="ib-mask"></div>
+    <div class="container ib-tx"><h1>项目案例</h1><p>全行业数字化落地成果 · 与客户共创价值</p><div class="crumb">首页 / 过往案例</div></div>
+  </div>
+  <section>
+    <div class="container">
+      <div class="filters" id="filters">
+        <button class="on" data-f="all">全部</button>
+        <button data-f="出海">品牌出海</button>
+        <button data-f="工业">工业</button>
+        <button data-f="政企">政企</button>
+        <button data-f="零售">零售</button>
+        <button data-f="医疗">医疗</button>
+      </div>
+      <div class="case-list" id="caseList">
+        <div class="cl-card" data-cat="出海"><div class="ci" style="background-image:url('https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=70')"></div><div class="cb"><span class="tg">品牌出海</span><h4>Bloom Advance 品牌官网</h4><p>为 Bloom Advance 打造的品牌出海官网与数字营销方案，结合谷歌搜索优化，助力品牌在海外市场建立线上形象、触达目标客户。</p></div></div>
+        <div class="cl-card" data-cat="工业"><div class="ci" style="background-image:url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=70')"></div><div class="cb"><span class="tg">工业</span><h4>智能制造管理平台</h4><p>为制造企业搭建生产数据采集与可视化管理平台，实现生产过程数字化、透明化管理。</p></div></div>
+        <div class="cl-card" data-cat="政企"><div class="ci" style="background-image:url('https://images.unsplash.com/photo-1577415124269-fc1140a69e91?auto=format&fit=crop&w=800&q=70')"></div><div class="cb"><span class="tg">政企</span><h4>政企信息化协同系统</h4><p>面向政企客户的办公协同与业务流程管理系统，提升组织运转效率。</p></div></div>
+        <div class="cl-card" data-cat="零售"><div class="ci" style="background-image:url('https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?auto=format&fit=crop&w=800&q=70')"></div><div class="cb"><span class="tg">零售</span><h4>新零售数字门店</h4><p>构建线上线下一体化的新零售数字门店系统，打通会员、商品与订单数据。</p></div></div>
+        <div class="cl-card" data-cat="医疗"><div class="ci" style="background-image:url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=70')"></div><div class="cb"><span class="tg">医疗</span><h4>智慧医疗信息系统</h4><p>为医疗机构开发的信息化管理系统，优化就诊流程与数据管理。</p></div></div>
+        <div class="cl-card" data-cat="出海"><div class="ci" style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=70')"></div><div class="cb"><span class="tg">品牌出海</span><h4>海外电商品牌站</h4><p>面向海外市场的品牌电商网站建设与搜索引擎优化，提升海外曝光与转化。</p></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="page" id="page-contact">
+  <div class="inner-banner">
+    <div class="ib-bg" style="background-image:url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1920&q=75')"></div><div class="ib-mask"></div>
+    <div class="container ib-tx"><h1>联系我们</h1><p>期待与您携手共创数字化未来</p><div class="crumb">首页 / 联系我们</div></div>
+  </div>
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="sec-title" style="text-align:left;margin-bottom:30px"><h2 style="font-size:26px">联系方式</h2><div class="line" style="margin:14px 0 0 0"></div></div>
+          <div class="ci-item"><div class="ci-ico">📧</div><div><h4>企业邮箱</h4><p>info@bluetech-group.com</p></div></div>
+          <div class="ci-item"><div class="ci-ico">📞</div><div><h4>联系电话</h4><p>+852 0000 0000</p></div></div>
+          <div class="ci-item"><div class="ci-ico">📍</div><div><h4>公司地址</h4><p>中国香港 · 商务中心</p></div></div>
+          <div class="ci-item"><div class="ci-ico">🕘</div><div><h4>工作时间</h4><p>周一至周五 9:00 - 18:00</p></div></div>
+        </div>
+        <div class="form">
+          <div class="sec-title" style="text-align:left;margin-bottom:24px"><h2 style="font-size:26px">在线留言</h2><div class="line" style="margin:14px 0 0 0"></div></div>
+          <form id="contactForm">
+            <div class="fg"><label>您的姓名 <span class="req">*</span></label><input type="text" id="cf_name" placeholder="请输入您的姓名" required></div>
+            <div class="fg"><label>联系方式 <span class="req">*</span></label><input type="text" id="cf_contact" placeholder="电话 / 邮箱 / 微信" required></div>
+            <div class="fg"><label>留言内容 <span class="req">*</span></label><textarea id="cf_msg" placeholder="请描述您的需求或商务合作意向" required></textarea></div>
+            <button type="submit" class="btn btn-primary" style="width:100%">提交留言</button>
+            <p style="font-size:12px;color:var(--muted);margin-top:12px;text-align:center">提交后将发送至我司企业邮箱，我们会尽快与您联系</p>
+          </form>
+        </div>
+      </div>
+      <div class="map-embed"><span>📍 中国香港 · 公司位置（地图占位）</span></div>
+    </div>
+  </section>
+</div>
+<footer>
+  <div class="container f-grid">
+    <div class="f-col">
+      <div class="f-logo"><span class="mark">蓝</span>蓝色科技集团</div>
+      <p>科技赋能 · 创新发展，专业的数字化技术解决方案服务商，服务全球华人客户合伙人。</p>
+    </div>
+    <div class="f-col"><h4>业务导航</h4><a data-nav="home">首页</a><a data-nav="about">关于我们</a><a data-nav="service">业务体系</a><a data-nav="cases">过往案例</a><a data-nav="contact">联系我们</a></div>
+    <div class="f-col"><h4>联系信息</h4><p>📧 info@bluetech-group.com</p><p>📞 +852 0000 0000</p><p>📍 中国香港 · 商务中心</p><a data-nav="contact">在线留言 →</a></div>
+  </div>
+  <div class="f-bottom">© 2025 蓝色科技集团 BlueTech Group. 版权所有 &nbsp;|&nbsp; 粤ICP备00000000号 &nbsp;|&nbsp; 公安备案号 00000000000000</div>
+</footer>
+<script>
+function showPage(name){
+  document.querySelectorAll(".page").forEach(function(p){p.classList.remove("show");});
+  var el=document.getElementById("page-"+name); if(el) el.classList.add("show");
+  document.querySelectorAll(".menu a").forEach(function(a){a.classList.toggle("active", a.getAttribute("data-nav")===name);});
+  window.scrollTo(0,0); updateHeader();
+  document.getElementById("menu").classList.remove("open");
+}
+function updateHeader(){
+  var h=document.getElementById("hdr");
+  var onHome=document.getElementById("page-home").classList.contains("show");
+  if(!onHome){h.classList.remove("top");h.classList.add("scrolled");return;}
+  if(window.scrollY>60){h.classList.remove("top");h.classList.add("scrolled");}
+  else{h.classList.add("top");h.classList.remove("scrolled");}
+}
+document.body.addEventListener("click",function(e){
+  var nav=e.target.closest("[data-nav]");
+  if(nav){e.preventDefault();showPage(nav.getAttribute("data-nav"));}
+});
+window.addEventListener("scroll",updateHeader);
+document.getElementById("burger").addEventListener("click",function(){document.getElementById("menu").classList.toggle("open");});
+document.getElementById("langBtn").addEventListener("click",function(){alert("中英文切换：正式上线时加载英文版页面。(EN version on launch.)");});
+var fwrap=document.getElementById("filters");
+if(fwrap){fwrap.addEventListener("click",function(e){
+  var b=e.target.closest("button"); if(!b)return;
+  fwrap.querySelectorAll("button").forEach(function(x){x.classList.remove("on");}); b.classList.add("on");
+  var f=b.getAttribute("data-f");
+  document.querySelectorAll("#caseList .cl-card").forEach(function(c){
+    c.style.display=(f==="all"||c.getAttribute("data-cat")===f)?"grid":"none";
+  });
+});}
+var cf=document.getElementById("contactForm");
+if(cf){cf.addEventListener("submit",function(e){
+  e.preventDefault();
+  var n=document.getElementById("cf_name").value,ct=document.getElementById("cf_contact").value,m=document.getElementById("cf_msg").value;
+  if(!n||!ct||!m){alert("请填写完整信息");return;}
+  var s=encodeURIComponent("网站留言 - "+n);
+  var b=encodeURIComponent("姓名: "+n+"\n联系方式: "+ct+"\n留言: "+m);
+  window.location.href="mailto:info@bluetech-group.com?subject="+s+"&body="+b;
+  cf.reset();
+});}
+updateHeader();
+</script>
+</body>
+</html>
