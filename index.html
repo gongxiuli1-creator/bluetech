@@ -31,7 +31,7 @@ header.top{background:linear-gradient(90deg,rgba(255,255,255,.15),rgba(15,82,186
 header.scrolled{background:rgba(255,255,255,.97);box-shadow:0 4px 20px rgba(15,82,186,.08)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:70px}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;color:#fff;transition:.35s;cursor:pointer}
-.logo .mark{height:38px;display:flex;align-items:center}.logo .mark img{height:38px;width:auto;display:block}
+.logo .mark{height:38px;display:flex;align-items:center}.logo .mark img{height:38px;width:auto;display:block}.logo .mark .lg-dark{display:none}header.scrolled .logo .mark .lg-light{display:none}header.scrolled .logo .mark .lg-dark{display:block}
 header.scrolled .logo{color:var(--blue)}
 .menu{display:flex;gap:34px;list-style:none}
 .menu a{color:#fff;font-size:15px;font-weight:500;transition:.3s;position:relative;padding:6px 0;cursor:pointer}
@@ -167,7 +167,7 @@ footer{background:#0c1a33;color:#c5cfe0;padding:60px 0 0}
 
 <header id="hdr" class="top">
   <div class="container nav">
-    <div class="logo" data-nav="home"><span class="mark"><img src="logo.png" alt="蓝天资本 AISKY CAPITAL"></span><span>蓝天资本</span></div>
+    <div class="logo" data-nav="home"><span class="mark"><img class="lg-light" src="logo-white.png" alt="蓝天资本 AISKY CAPITAL"><img class="lg-dark" src="logo.png" alt="蓝天资本 AISKY CAPITAL"></span><span>蓝天资本</span></div>
     <ul class="menu" id="menu">
       <li><a data-nav="home" class="active">首页</a></li>
       <li><a data-nav="about">关于我们</a></li>
