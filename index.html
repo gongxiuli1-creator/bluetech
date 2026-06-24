@@ -31,7 +31,7 @@ header.top{background:linear-gradient(90deg,rgba(255,255,255,.15),rgba(15,82,186
 header.scrolled{background:rgba(255,255,255,.97);box-shadow:0 4px 20px rgba(15,82,186,.08)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:70px}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;color:#fff;transition:.35s;cursor:pointer}
-.logo .mark{width:38px;height:38px;display:flex;align-items:center;justify-content:center}.logo .mark svg{width:38px;height:38px;display:block}
+.logo .mark{height:38px;display:flex;align-items:center}.logo .mark img{height:38px;width:auto;display:block}
 header.scrolled .logo{color:var(--blue)}
 .menu{display:flex;gap:34px;list-style:none}
 .menu a{color:#fff;font-size:15px;font-weight:500;transition:.3s;position:relative;padding:6px 0;cursor:pointer}
@@ -95,7 +95,7 @@ footer{background:#0c1a33;color:#c5cfe0;padding:60px 0 0}
 .f-col h4{color:#fff;font-size:17px;margin-bottom:20px}
 .f-col p,.f-col a{font-size:14px;color:#9aa8c0;margin-bottom:10px;display:block;transition:.2s}.f-col a:hover{color:#fff}
 .f-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;color:#fff;margin-bottom:16px}
-.f-logo .mark{width:38px;height:38px;display:flex;align-items:center;justify-content:center}.f-logo .mark svg{width:38px;height:38px;display:block}
+.f-logo .mark{height:38px;display:flex;align-items:center}.f-logo .mark img{height:38px;width:auto;display:block}
 .f-bottom{border-top:1px solid rgba(255,255,255,.1);padding:20px 0;text-align:center;font-size:13px;color:#7e8ba6}.f-bottom a{color:#7e8ba6}
 .inner-banner{height:300px;display:flex;align-items:center;color:#fff;position:relative}
 .inner-banner .ib-bg{position:absolute;inset:0;background-size:cover;background-position:center}
@@ -167,7 +167,7 @@ footer{background:#0c1a33;color:#c5cfe0;padding:60px 0 0}
 
 <header id="hdr" class="top">
   <div class="container nav">
-    <div class="logo" data-nav="home"><span class="mark"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="aiskyA" x1="0.1" y1="0" x2="0.6" y2="1"><stop offset="0" stop-color="#bfe0fb"/><stop offset="1" stop-color="#3f93dd"/></linearGradient><linearGradient id="aiskyB" x1="0" y1="1" x2="1" y2="0.2"><stop offset="0" stop-color="#0c4c97"/><stop offset="0.5" stop-color="#1f72c2"/><stop offset="1" stop-color="#4ea0e6"/></linearGradient></defs><path d="M50 12 A38 38 0 0 0 13 50 A38 38 0 0 1 50 22 Z" fill="url(#aiskyA)"/><path d="M50 22 A28 28 0 1 0 76 60 L86 60 A38 38 0 1 1 50 12 Z" fill="url(#aiskyB)"/><circle cx="50" cy="50" r="12" fill="url(#aiskyA)"/><g fill="#2f86d4"><rect x="72" y="62" width="6" height="6" rx="1.2"/><rect x="80" y="66" width="4.5" height="4.5" rx="1" opacity="0.85"/><rect x="78" y="58" width="4" height="4" rx="1" opacity="0.7"/><rect x="86" y="63" width="3.2" height="3.2" rx="0.8" opacity="0.55"/><rect x="84" y="70" width="3" height="3" rx="0.8" opacity="0.45"/></g></svg></span><span>蓝天资本</span></div>
+    <div class="logo" data-nav="home"><span class="mark"><img src="logo.png" alt="蓝天资本 AISKY CAPITAL"></span><span>蓝天资本</span></div>
     <ul class="menu" id="menu">
       <li><a data-nav="home" class="active">首页</a></li>
       <li><a data-nav="about">关于我们</a></li>
@@ -411,7 +411,7 @@ footer{background:#0c1a33;color:#c5cfe0;padding:60px 0 0}
 <footer>
   <div class="container f-grid">
     <div class="f-col">
-      <div class="f-logo"><span class="mark"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="aiskyA" x1="0.1" y1="0" x2="0.6" y2="1"><stop offset="0" stop-color="#bfe0fb"/><stop offset="1" stop-color="#3f93dd"/></linearGradient><linearGradient id="aiskyB" x1="0" y1="1" x2="1" y2="0.2"><stop offset="0" stop-color="#0c4c97"/><stop offset="0.5" stop-color="#1f72c2"/><stop offset="1" stop-color="#4ea0e6"/></linearGradient></defs><path d="M50 12 A38 38 0 0 0 13 50 A38 38 0 0 1 50 22 Z" fill="url(#aiskyA)"/><path d="M50 22 A28 28 0 1 0 76 60 L86 60 A38 38 0 1 1 50 12 Z" fill="url(#aiskyB)"/><circle cx="50" cy="50" r="12" fill="url(#aiskyA)"/><g fill="#2f86d4"><rect x="72" y="62" width="6" height="6" rx="1.2"/><rect x="80" y="66" width="4.5" height="4.5" rx="1" opacity="0.85"/><rect x="78" y="58" width="4" height="4" rx="1" opacity="0.7"/><rect x="86" y="63" width="3.2" height="3.2" rx="0.8" opacity="0.55"/><rect x="84" y="70" width="3" height="3" rx="0.8" opacity="0.45"/></g></svg></span>蓝天资本</div>
+      <div class="f-logo"><span class="mark"><img src="logo-white.png" alt="蓝天资本 AISKY CAPITAL"></span>蓝天资本</div>
       <p>让全球最优秀的企业展翅高飞</p>
     </div>
     <div class="f-col"><h4>业务导航</h4><a data-nav="home">首页</a><a data-nav="about">关于我们</a><a data-nav="service">业务体系</a><a data-nav="cases">过往案例</a><a data-nav="contact">联系我们</a></div>
