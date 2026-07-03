@@ -112,8 +112,11 @@ footer{background:#0c1a33;color:#c5cfe0;padding:60px 0 0}
 .about-intro .im{border-radius:16px;overflow:hidden;box-shadow:0 18px 40px rgba(15,82,186,.15)}.about-intro .im img{height:380px;width:100%;object-fit:cover}
 .about-intro p{color:var(--muted);margin-bottom:16px}
 .vmv{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:30px}
-.vmv-card{background:var(--gray);border-radius:12px;padding:28px;text-align:center;border-top:3px solid var(--blue)}
+.vmv-card{background:transparent;border-radius:0;padding:14px 18px;text-align:center}
 .vmv-card .vi{font-size:34px;color:var(--blue);margin-bottom:12px}.vmv-card h4{margin-bottom:8px}.vmv-card p{font-size:13px;color:var(--muted)}
+.hl-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;max-width:1080px;margin:48px auto 0;text-align:center;align-items:start}
+.hl-item h4{font-size:17px;color:var(--blue);margin-bottom:8px;font-weight:700}
+.hl-item p{font-size:14px;color:var(--muted);line-height:1.75}
 .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.gal .g{border-radius:12px;overflow:hidden;height:220px}
 .gal .g img{height:100%;width:100%;object-fit:cover;transition:.5s}.gal .g:hover img{transform:scale(1.08)}
 .honor{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
@@ -157,7 +160,7 @@ footer{background:#0c1a33;color:#c5cfe0;padding:60px 0 0}
 .menu.open a{color:var(--text);padding:14px 0;border-bottom:1px solid var(--line)}
 .hero h1{font-size:36px}.hero .sub{font-size:16px}
 .adv-grid{gap:30px}.adv-item{min-width:130px;flex:0 0 40%}
-.biz-grid,.bb-grid,.svc,.case-list,.vmv,.honor{grid-template-columns:1fr}
+.biz-grid,.bb-grid,.svc,.case-list,.vmv,.honor,.hl-grid{grid-template-columns:1fr}
 .case-track,.gal{grid-template-columns:1fr 1fr}
 .split,.about-intro,.contact-grid{grid-template-columns:1fr;gap:30px}
 .plat{flex-direction:column}.plat-arrow{transform:rotate(90deg)}
@@ -214,6 +217,12 @@ footer{background:#0c1a33;color:#c5cfe0;padding:60px 0 0}
             <div class="vmv-card"><div class="vi">💎</div><h4>核心价值观</h4><p>专业、诚信、创新、共赢</p></div>
           </div>
         </div>
+      </div>
+      <div class="hl-grid">
+        <div class="hl-item"><h4>实战经验</h4><p>12 年 +，跨周期</p></div>
+        <div class="hl-item"><h4>累计投资</h4><p>USD 200m+</p></div>
+        <div class="hl-item"><h4>资产管理规模</h4><p>USD 300m+</p></div>
+        <div class="hl-item"><h4>产业协同网络 ｜ 龙头企业布局</h4><p>与高科技、云计算、人工智能、航空航天、医疗健康等平台巨头建立紧密联系，参与龙头企业投资，支持企业投后发展。</p></div>
       </div>
     </div>
   </section>
