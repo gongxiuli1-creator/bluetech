@@ -120,6 +120,11 @@ footer{background:#0c1a33;color:#c5cfe0;padding:60px 0 0}
 .hl-item .hv{font-size:25px;color:var(--blue);font-weight:800;line-height:1.2}
 .hl-item .hs{font-size:13px;color:var(--muted);margin-top:6px}
 .hl-item p{font-size:13px;color:var(--muted);line-height:1.75}
+.founder-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:44px}
+.founder-card{background:#fff;border-radius:16px;padding:36px 34px;box-shadow:0 10px 30px rgba(15,82,186,.08);border-top:3px solid var(--blue)}
+.founder-card h3{font-size:22px;color:var(--blue);font-weight:700;margin-bottom:8px}
+.founder-card h3:after{content:"";display:block;width:40px;height:3px;background:var(--blue);margin:12px 0 0;border-radius:2px}
+.founder-card p{font-size:14.5px;color:var(--muted);line-height:1.95;text-align:justify;margin-top:18px}
 .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.gal .g{border-radius:12px;overflow:hidden;height:220px}
 .gal .g img{height:100%;width:100%;object-fit:cover;transition:.5s}.gal .g:hover img{transform:scale(1.08)}
 .honor{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
@@ -165,6 +170,7 @@ footer{background:#0c1a33;color:#c5cfe0;padding:60px 0 0}
 .adv-grid{gap:30px}.adv-item{min-width:130px;flex:0 0 40%}
 .biz-grid,.bb-grid,.svc,.case-list,.vmv,.honor{grid-template-columns:1fr}
 .hl-grid{grid-template-columns:1fr 1fr;gap:14px}
+.founder-grid{grid-template-columns:1fr;gap:20px}
 .timeline{grid-template-columns:1fr;gap:0;max-width:440px;padding-left:24px}
 .timeline:before{left:6px;right:auto;top:0;bottom:0;height:auto;width:2px}
 .tl-item{text-align:left;padding:0 0 26px 22px}
@@ -232,13 +238,16 @@ footer{background:#0c1a33;color:#c5cfe0;padding:60px 0 0}
   </section>
   <section class="biz">
     <div class="container">
-      <div class="sec-title"><h2>发展历程</h2><div class="line"></div></div>
-      <div class="timeline" style="margin-top:40px">
-        <div class="tl-item"><div class="yr">2015</div><p>蓝天资本于新加坡成立，确立全球私募股权投资方向，组建由资深金融专业人士构成的核心团队。</p></div>
-        <div class="tl-item"><div class="yr">2018</div><p>完善投资研究与风险控制体系，聚焦科技创新、生物医药与可持续发展等高成长赛道，投资布局稳步扩展。</p></div>
-        <div class="tl-item"><div class="yr">2021</div><p>拓展香港、北美与东南亚业务布局，搭建全球化投资与产业协同网络。</p></div>
-        <div class="tl-item"><div class="yr">2023</div><p>投资版图覆盖人工智能、航天科技、生物医药等前沿领域，累计投资规模突破 USD 200m。</p></div>
-        <div class="tl-item"><div class="yr">2025</div><p>资产管理规模超过 USD 300m，多家被投企业陆续登陆资本市场，迈入全球私募股权投资新阶段。</p></div>
+      <div class="sec-title"><h2>创始人简介</h2><div class="line"></div></div>
+      <div class="founder-grid">
+        <div class="founder-card">
+          <h3>Yale Du</h3>
+          <p>Yale 毕业于新加坡国立大学，获工商管理荣誉学士学位，并于暨南大学取得金融学博士学位，拥有 25 年金融行业经验。曾任澳洲麦格理集团董事总经理兼大中华区私募及结构性投资主管，并曾任职于德意志银行、瑞士信贷、澳洲联邦银行、波士顿银行等国际机构，工作遍及新加坡、美国及香港。他曾协助多家中国龙头企业完成国际资本市场首次融资，累计融资金额超 30 亿美元。目前担任德雅资本创始合伙人及创币国际资本管理集团管理合伙人，并担任多家新加坡家族办公室合伙人。</p>
+        </div>
+        <div class="founder-card">
+          <h3>Harry Wang</h3>
+          <p>Harry 毕业于新加坡国立大学商学院 EMBA，并担任新国大学生创业孵化导师。他拥有超过 15 年金融行业经验，专注于股权与债权投资领域，长期深耕东南亚和北美科技板块，具备丰富的跨境投资与项目管理经验。他曾参与东南亚科技平台、头部电商，以及埃隆·马斯克旗下多家企业的投资与孵化，涵盖战略投资与项目管理，累计参投总金额已超过 5 亿美元。</p>
+        </div>
       </div>
     </div>
   </section>
