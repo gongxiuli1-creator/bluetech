@@ -42,7 +42,7 @@ header.scrolled .menu a:hover,header.scrolled .menu a.active{color:#fff}header.s
 .nav-right{display:flex;align-items:center;gap:16px}
 .lang{color:#fff;border:1px solid rgba(255,255,255,.6);border-radius:20px;padding:5px 14px;font-size:13px;cursor:pointer;background:transparent;transition:.3s}
 header.scrolled .lang{color:#fff;border-color:rgba(255,255,255,.6)}.lang:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
-.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}.burger span{width:24px;height:2px;background:#fff;transition:.3s}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}.burger span{width:24px;height:2px;background:#fff;transition:.3s;box-shadow:0 0 3px rgba(0,0,0,.45)}
 header.scrolled .burger span{background:#fff}
 .page{display:none}.page.show{display:block;animation:fade .5s}
 @keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
@@ -166,6 +166,9 @@ footer{background:#0c1a33;color:#c5cfe0;padding:60px 0 0}
 .menu,.nav-right .lang{display:none}.burger{display:flex}
 .menu.open{display:flex;flex-direction:column;position:absolute;top:70px;left:0;right:0;background:#fff;padding:20px 24px;box-shadow:0 10px 30px rgba(0,0,0,.1);gap:0}
 .menu.open a{color:var(--text);padding:14px 0;border-bottom:1px solid var(--line)}
+.menu.open a:after{display:none}
+.menu.open a.active{color:var(--blue)}
+.menu.open li:last-child a{border-bottom:none}
 .hero h1{font-size:36px}.hero .sub{font-size:16px}
 .adv-grid{gap:30px}.adv-item{min-width:130px;flex:0 0 40%}
 .biz-grid,.bb-grid,.svc,.case-list,.vmv,.honor{grid-template-columns:1fr}
