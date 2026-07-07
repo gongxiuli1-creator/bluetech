@@ -165,9 +165,10 @@ footer{background:#0c1a33;color:#c5cfe0;padding:60px 0 0}
 @media(max-width:900px){
 .menu,.nav-right .lang{display:none}.burger{display:flex}
 .menu.open{display:flex;flex-direction:column;position:absolute;top:70px;left:0;right:0;background:#fff;padding:20px 24px;box-shadow:0 10px 30px rgba(0,0,0,.1);gap:0}
-.menu.open a{color:var(--text);padding:14px 0;border-bottom:1px solid var(--line)}
+.menu.open a{padding:14px 0;border-bottom:1px solid var(--line)}
+header .menu.open a,header.scrolled .menu.open a{color:var(--text)}
+header .menu.open a.active,header.scrolled .menu.open a.active{color:var(--blue)}
 .menu.open a:after{display:none}
-.menu.open a.active{color:var(--blue)}
 .menu.open li:last-child a{border-bottom:none}
 .hero h1{font-size:36px}.hero .sub{font-size:16px}
 .adv-grid{gap:30px}.adv-item{min-width:130px;flex:0 0 40%}
